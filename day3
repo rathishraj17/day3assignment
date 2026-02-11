@@ -1,0 +1,27 @@
+1. Print numbers in descending order from 10 to 1 using looping statement
+
+package Newproject;
+
+public class Day3assignment {
+
+	public static void main(String[] args) {
+
+		for (int i=10; i>=1; i--) {
+		System.out.println(i);
+		}
+
+	}
+
+}
+
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
