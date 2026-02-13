@@ -25,3 +25,100 @@ Output:
 3
 2
 1
+
+
+2. Get the input from user like add,sub,div
+
+
+package Newproject;
+
+import java.util.Scanner;
+
+public class Day3assignment {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+        
+        String op = sc.next();
+
+        int result;
+
+        switch(op) {
+            case "add":
+                result = a + b;
+                System.out.println("Result = " + result);
+                break;
+
+            case "sub":
+                result = a - b;
+                System.out.println("Result = " + result);
+                break;
+
+            case "mul":
+                result = a * b;
+                System.out.println("Result = " + result);
+                break;
+
+            case "div":
+                if (b != 0) {
+                    result = a / b;
+                    System.out.println("Result = " + result);
+                } else {
+                    System.out.println("Cannot divide by zero");
+                }
+                break;
+
+            default:
+            System.out.println("Invalid operation");
+                     
+        }
+
+        sc.close();
+	}
+	
+}
+
+3. Based on the input perform the mathematical operation using any conditional statement
+
+package Newproject;
+
+import java.util.Scanner;
+
+public class Conditional {
+
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Tamil");
+		int a = scan.nextInt();
+		System.out.println("English");
+		int b = scan.nextInt();
+		System.out.println("Maths");
+		int c = scan.nextInt();
+		System.out.println("Physics");
+		int d = scan.nextInt();
+		System.out.println("Chemistry");
+		int e = scan.nextInt();
+		
+		int total = (a+b+c+d+e);
+		double average = total/5;
+		
+		System.out.println("CGPA 2025-2026: "+ average+'%');
+		
+		if (average>50){
+		System.out.println("Good");
+		} else if (average==50){
+			System.out.println("Average");
+		}else {
+				System.out.println("Fail");
+			}
+		}
+	
+		}
+	
